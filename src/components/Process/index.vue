@@ -8,6 +8,7 @@ export default {
   props:['tabName', 'conf'],
   data() {
     let data = getMockData()
+    console.log(data,JSON.stringify(data))
     if (typeof this.conf === 'object' && this.conf !== null) {
       Object.assign(data, this.conf)
     }
